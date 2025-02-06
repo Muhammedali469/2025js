@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <script>
+      function random(min, max) {
+        var rand = min + Math.random() * (max + 1 - min);
+        rand = Math.floor(rand);
+
+        return rand;
+      }
+
+      for (var i = 0; i < 200; i++) {
+        document.getElementsByTagName("body")[0].innerHTML +=
+          '<i class="rain" style="left: ' +
+          random(-2000, 2000) +
+          "px;transform: translate3d(0, 0, 0);animation-delay: " +
+          0.01 * i +
+          's"></i>';
+      }
+    </script>
+    <div>
+      <header>
+        <div>
+          <div>
+            <img
+              src="https://img.freepik.com/premium-vector/weather-cloud-sun-rain-lightning-logo-design-symbol-icon-template_23729-1780.jpg?semt=ais_hybrid"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2>AccuWeather</h2>
+          </div>
+        </div>
+        <div>
+          <input type="text" id="input" placeholder="Enter city name" />
+          <button onclick="klimat()">ауа райын тексеру</button>
+          <img
+            src="https://img.freepik.com/free-vector/magnifying-glass-checkered-background_1262-6424.jpg?semt=ais_hybrid"
+            alt=""
+          />
+        </div>
+      </header>
+
+      <main>
+        <div class="main1">
+          <img
+            src="https://img.freepik.com/free-vector/realistic-weather-widget_1284-4092.jpg?t=st=1738820186~exp=1738823786~hmac=386815650d54c7d4a2e912c0b749e7baa13131f3884c19d839e038ec79416a32&w=740"
+            alt=""
+          />
+          <div class="conteiner">
+            <div class="conteiner1">
+              <div>
+                <img
+                  class="iconpogod"
+                  src=" https://cdn-icons-png.freepik.com/256/14922/14922263.png?semt=ais_hybrid"
+                  alt=""
+                />
+              </div>
+              <div class="kapla">
+                <div>
+                  <img
+                    class="iconkapla"
+                    src="https://cdn-icons-png.freepik.com/256/3313/3313997.png?semt=ais_hybrid"
+                    alt=""
+                  />
+                </div>
+                <div><p>60%</p></div>
+              </div>
+            </div>
+            <p>временый снег</p>
+
+            <div class="conteiner2" id="weatherInfo"></div>
+          </div>
+
+          <div class="conteiner3" id="weatherContainer"></div>
+        </div>
+
+        <nav class="nav">
+          <iframe
+            width="300px"
+            height="200px"
+            src="https://www.youtube.com/embed/3VQ3S5WTvgs?si=YD4Q688ZdLtXmCtF"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="advertising">
+            <a href="">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRKURt3l2p7UaDFsZ974U3I4HCvAk-fFpfXw&s"
+                alt=""
+              />
+              <h3>Бізде бәрі арзан</h3>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSGfD1flH-Nb_b33kNQSk6ym8SKXAxsK9pzA&s"
+                alt=""
+              />
+            </a>
+            <h3>Бізде ең дәмді ас</h3>
+          </div>
+        </nav>
+      </main>
+
+      <footer id="footer">
+        <div>
+          <p>
+            It's a long established fact that a reader<br />
+            will be distracted by the readable content of a page when looking at
+            its layout.
+          </p>
+          <br /><br />
+          <div class="iconfoot1">
+            <div>
+              <img
+                class="icon"
+                src="https://cdn-icons-png.flaticon.com/128/3670/3670051.png"
+                alt="watsap"
+              />
+            </div>
+
+            <div>
+              <img
+                class="icon"
+                src="https://cdn-icons-png.flaticon.com/128/5968/5968804.png"
+                alt="telegram"
+              />
+            </div>
+            <div>
+              <img
+                class="icon"
+                src="https://cdn-icons-png.flaticon.com/128/174/174855.png"
+                alt="Instagram"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="footer2">
+          <h2>Products</h2>
+          <a href="#">Prices drop</a><br /><br />
+          <a href="#">New Products</a><br /><br />
+          <a href="#">Best Sales</a><br /><br />
+          <a href="#">Contact us</a><br /><br />
+          <a href="#">My account</a><br /><br />
+        </div>
+        <div class="footer3">
+          <h2>Our Company</h2>
+          <a href="#">Legal Notice</a><br /><br />
+          <a href="#">About us</a><br /><br />
+          <a href="#">Shipping policy</a><br /><br />
+          <a href="#">Site map</a><br />
+        </div>
+        <div>
+          <h2>Contact us</h2>
+          <br />
+          <div>
+            <a href="#"
+              >Calista Wise, 7292 Str Sample state, Sample city<br /></a
+            ><br />
+          </div>
+          <div>
+            <img
+              class="icon"
+              src="https://cdn-icons-png.flaticon.com/128/597/597177.png"
+              alt="Phone"
+            />
+            <a href="#">(+33) 123 456 789</a><br /><br />
+          </div>
+          <div>
+            <img
+              class="icon"
+              src="https://cdn-icons-png.flaticon.com/128/542/542689.png"
+              alt="Email"
+            />
+            <a href="#">demo@demo.com</a>
+          </div>
+        </div>
+      </footer>
+      <script>
+        const apiKey = "fb2cff02b71168e9f0c68fd3f83d168a";
+        const cities = [
+          "Almaty",
+          "Astana",
+          "Shymkent",
+          "Aktobe",
+          "Karagandy",
+          "Taraz",
+          "Pavlodar",
+          "Oskemen",
+          "Semey",
+          "Atyrau",
+        ];
+
+        function klimat() {
+          const city = document.getElementById("input").value;
+          const api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+          fetch(api)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("API дұрыс емес");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              const weatherInfo = document.getElementById("weatherInfo");
+              weatherInfo.innerHTML = `
+
+                <p>City: ${data.name}</p>
+                <p>Temperature: ${data.main.temp} °C</p>
+
+              `;
+            })
+            .catch((error) => {
+              console.error("Error fetching the weather data:", error);
+              const weatherInfo = document.getElementById("weatherInfo");
+              weatherInfo.innerHTML = `<p>Ондай қала жоқ</p>`;
+            });
+        } //value trim - пробелдарды алып тастайды
+        ///
+
+        function klimatmas() {
+          cities.forEach((city) => {
+            const api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+            fetch(api)
+              .then((response) => {
+                if (!response.ok) {
+                  throw new Error("API durus emes");
+                }
+                return response.json();
+              })
+              .then((data) => {
+                const weatherContainer =
+                  document.getElementById("weatherContainer");
+                const cityWeather = document.createElement("div");
+                cityWeather.innerHTML = `
+          <h3>${data.name}</h3>
+          <p>Temperature: ${data.main.temp} °C</p>
+        `;
+                weatherContainer.appendChild(cityWeather);
+              })
+              .catch((error) => {
+                console.error("Error:", error);
+              });
+          });
+        }
+
+        klimatmas();
+      </script>
+    </div>
+  </body>
+</html>

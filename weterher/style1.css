@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+.rain {
+  position: fixed;
+  width: 2px; /* Ширина капли */
+  height: 4px; /* Высота капли */
+  top: -3px;
+  background-color: #fff; /* Цвет капли */
+  animation: rain 1.2s linear infinite;
+  z-index: 99;
+  border-radius: 1px;
+}
+
+@keyframes rain {
+  to {
+    transform: translate3d(
+      200px,
+      1000px,
+      0
+    ); /* Первое значение (200px) это направление дождя, где: 0 - вниз, положительное число - вправо, отрицательное - влево */
+  }
+}
+/*  */
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #ff5733;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*  */
+.conteiner {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 10px;
+}
+
+.conteiner1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconpogod {
+  width: 80px;
+  height: 80px;
+}
+
+.kapla {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.iconkapla {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.conteiner2 {
+  font-size: 18px;
+}
+.main1 {
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.nav {
+  background-color: #0077b6;
+  width: 300px;
+  height: auto;
+}
+.advertising {
+  margin-top: 100px;
+}
+.conteiner3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/*  */
+footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 100px;
+  background-color: #0077b6;
+}
+.iconfoot {
+  width: 50px;
+  height: 50px;
+}
+.iconfoot1 {
+  display: flex;
+  justify-content: start;
+  gap: 5px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+/*  */
